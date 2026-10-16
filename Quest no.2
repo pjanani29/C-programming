@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int answered, remaining, submitted;
+
+    printf("Questions Answered: ");
+    scanf("%d", &answered);
+    printf("Remaining Time: ");
+    scanf("%d", &remaining);
+    printf("Already Submitted: ");
+    scanf("%d", &submitted);
+
+    if (answered >= 1 && remaining > 0 && submitted == 0)
+        printf("Submission Allowed\n");
+    else
+        printf("Submission Not Allowed\n");
+
+    return 0;
+}
+sample input 
+/*Questions Answered: 45
+Remaining Time: 12
+Already Submitted: 0
+sample output
+/*Submission Allowed
