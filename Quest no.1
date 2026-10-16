@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int distance;
+    char member[10];
+    float fare = 100;
+
+    printf("Distance: ");
+    scanf("%d", &distance);
+    printf("Member: ");
+    scanf("%s", member);
+
+    if (distance > 10)
+        fare += (distance - 10) * 20;
+
+    if (strcmp(member, "true") == 0 || strcmp(member, "1") == 0)
+        fare = fare - fare * 0.10;
+
+    printf("Final Fare: ₹%.0f\n", fare);
+    return 0;
+}
+sample input
+/*Distance: 15
+Member: true
+sample output 
+/*Final Fare: ₹180
